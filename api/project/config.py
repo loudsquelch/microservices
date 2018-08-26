@@ -1,6 +1,7 @@
 class BaseConfig:
     """Base configuration"""
     TESTING = False
+    REMOTE_API_TOKEN = "secret"
 
 class DevelopmentConfig(BaseConfig):
     """Development configuration"""

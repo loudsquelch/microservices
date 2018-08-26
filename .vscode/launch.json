@@ -50,13 +50,14 @@
             ]
         },
         {
-            "name": "Python: Flask (0.11.x or later)",
+            "name": "Python: Flask [DEV]",
             "type": "python",
             "request": "launch",
             "module": "flask",
             "env": {
                 "FLASK_APP": "api/project/__init__.py",
-                "FLASK_ENV": "development"
+                "FLASK_ENV": "development",
+                "APP_SETTINGS": "project.config.DevelopmentConfig"
             },
             "program": "${workspaceFolder}/api/manage.py",
             "args": [

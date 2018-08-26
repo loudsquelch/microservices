@@ -8,3 +8,4 @@ https://code.visualstudio.com/docs/python/tutorial-flask
 
 ## Docker on Ubuntu
 https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-docker-ce-1
+https://docs.docker.com/install/linux/linux-postinstall/
