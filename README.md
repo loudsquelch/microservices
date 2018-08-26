@@ -4,21 +4,21 @@
 
 ### Create Virtual Env
 
-cd ~/Documents/code/microservices
-python3 -m venv env
+    cd ~/Documents/code/microservices
+    python3 -m venv env
 
 ### From Shell
 
-cd ~/Documents/code/microservices
-source env/bin/activate
-export FLASK_APP=api/project/__init__.py
-export FLASK_ENV=development
-export APP_SETTINGS=project.config.DevelopmentConfig
-python api/manage.py run
+    cd ~/Documents/code/microservices
+    source env/bin/activate
+    export FLASK_APP=api/project/__init__.py
+    export FLASK_ENV=development
+    export APP_SETTINGS=project.config.DevelopmentConfig
+    python api/manage.py run
 
 ### Using vscode
 
-Hit f5 and choose 'Python: Flask [DEV]'
+Hit F5 and choose 'Python: Flask [DEV]'
 
 #### launcher settings
 
