@@ -1,0 +1,16 @@
+# base image
+FROM python:3.6.5-alpine
+
+# Working directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+# Add requirements
+COPY ./requirements.txt /usr/src/app/requirements.txt
+RUN pip install -r requirements
+
+# Add application
+COPY . /usr/src/app
+
+# Run server
+CMD python manage.py run -h 0.0.0.0
