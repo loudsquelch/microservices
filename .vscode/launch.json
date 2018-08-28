@@ -55,64 +55,15 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "api/project/__init__.py",
+                "FLASK_APP": "services/api/project/__init__.py",
                 "FLASK_ENV": "development",
                 "APP_SETTINGS": "project.config.DevelopmentConfig"
             },
-            "program": "${workspaceFolder}/api/manage.py",
+            "program": "${workspaceFolder}/services/api/manage.py",
             "args": [
                 "run",
                 "--no-debugger",
                 "--no-reload"
-            ]
-        },
-        {
-            "name": "Python: Module",
-            "type": "python",
-            "request": "launch",
-            "module": "module.name"
-        },
-        {
-            "name": "Python: Pyramid",
-            "type": "python",
-            "request": "launch",
-            "args": [
-                "${workspaceFolder}/development.ini"
-            ],
-            "debugOptions": [
-                "RedirectOutput",
-                "Pyramid"
-            ]
-        },
-        {
-            "name": "Python: Watson",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/console.py",
-            "args": [
-                "dev",
-                "runserver",
-                "--noreload=True"
-            ]
-        },
-        {
-            "name": "Python: All debug Options",
-            "type": "python",
-            "request": "launch",
-            "pythonPath": "${config:python.pythonPath}",
-            "program": "${file}",
-            "module": "module.name",
-            "env": {
-                "VAR1": "1",
-                "VAR2": "2"
-            },
-            "envFile": "${workspaceFolder}/.env",
-            "args": [
-                "arg1",
-                "arg2"
-            ],
-            "debugOptions": [
-                "RedirectOutput"
             ]
         }
     ]
